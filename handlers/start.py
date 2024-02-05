@@ -16,7 +16,8 @@ async def start(message: types.Message):
             ],
             [
                 types.InlineKeyboardButton(text='Каталог товаров',
-                                           callback_data='О спортпите')
+                                           callback_data='О спортпите'),
+                types.InlineKeyboardButton(text="Houses", callback_data="house")
             ]
         ]
     )

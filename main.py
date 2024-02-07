@@ -8,6 +8,7 @@ from handlers.prod import pro_router
 from handlers.products import prod_router
 from parser.houses import parser_router
 from handlers.schedule import scheduler_router, scheduler
+from handlers.ban_in_group import ban_router
 
 # from handlers.pic import pic_router
 # from handlers.opros import opros_router
@@ -28,6 +29,7 @@ async def main():
      dp.startup.register(on_startapp),
      dp.include_router(parser_router),
      dp.include_router(scheduler_router),
+     dp.include_router(ban_router),
      scheduler.start(),
 
 
